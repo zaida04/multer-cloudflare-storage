@@ -1,0 +1,16 @@
+node_modules/
+dist/
+types/
+coverage/
+
+*.tsbuildinfo
+*.log
+
+.vscode/
+.idea/
+*.env
+
+package-lock.json
+yarn.lock
+
+*.env

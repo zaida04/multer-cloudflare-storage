@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig.json",
+    "compilerOptions": {
+        "strict": true,
+        "alwaysStrict": true,
+        "moduleResolution": "node",
+        "removeComments": true,
+        "pretty": true,
+        "module": "CommonJS",
+        "outDir": "./dist",
+        "declarationDir": "./dist/types",
+        "target": "ES6",
+        "lib": ["ESNext"],
+        "types": ["node"],
+        "skipLibCheck": true,
+        "noEmitHelpers": false,
+        "importHelpers": false,
+        "declaration": true,
+        "esModuleInterop": true,
+        "noUncheckedIndexedAccess": true
+    },
+    "include": ["src/**/*.ts"]
+}
