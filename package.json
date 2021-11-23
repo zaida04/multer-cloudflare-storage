@@ -2,6 +2,8 @@
     "name": "multer-cloudflare-storage",
     "version": "1.0.1",
     "description": "Multer engine allowing users to upload to Cloudflare Images with ease 🚀",
+    "author": "Zaid \"Nico\"",
+    "license": "MIT",
     "main": "dist/index.js",
     "types": "dist/types/index.d.ts",
     "exports": {
@@ -48,23 +50,8 @@
         "type": "git",
         "url": "git+https://github.com/zaida04/multer-cloudflare-storage.git"
     },
-    "author": "Zaid \"Nico\"",
-    "license": "MIT",
     "bugs": {
         "url": "https://github.com/zaida04/multer-cloudflare-storage.git/issues"
     },
-    "homepage": "https://github.com/zaida04/multer-cloudflare-storage.git#readme",
-    "eslintConfig": {
-        "extends": "@sapphire"
-    },
-    "prettier": {
-        "endOfLine": "auto",
-        "printWidth": 150,
-        "semi": true,
-        "tabWidth": 4,
-        "trailingComma": "none"
-    },
-    "lint-staged": {
-        "*.ts": "eslint --fix --ext ts"
-    }
+    "homepage": "https://github.com/zaida04/multer-cloudflare-storage.git#readme"
 }

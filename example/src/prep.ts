@@ -1,8 +1,9 @@
 import { config } from "dotenv";
 import { join } from "path";
+
 config({
-    "path": join(__dirname, "..", "..", ".env")
-})
+    path: join(__dirname, "..", "..", ".env")
+});
 
 const missingKeys: string[] = [];
 for (const envKey of ["CLOUDFLARE_ACCOUNT_ID", "CLOUDFLARE_TOKEN"]) {
