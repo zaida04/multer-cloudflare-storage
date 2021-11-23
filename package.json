@@ -11,6 +11,9 @@
         },
         "./": "./"
     },
+    "files": [
+        "dist/"
+    ],
     "scripts": {
         "build": "npx tsc && npx gen-esm-wrapper . ./dist/index.mjs",
         "lint": "npx eslint src/ --ext .ts,.js",
@@ -40,10 +43,6 @@
         "form-data": "^4.0.0",
         "node-fetch": "v2"
     },
-    "files": [
-        "dist/",
-        "types/"
-    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/zaida04/multer-cloudflare-storage.git"
