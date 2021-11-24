@@ -16,6 +16,7 @@
     "files": [
         "dist/"
     ],
+    "tags": ["multer", "multer-engine", "multer-storage", "multer-cloudflare"],
     "scripts": {
         "build": "npx tsc && npx gen-esm-wrapper . ./dist/index.mjs",
         "lint": "npx eslint src/ --ext .ts,.js",
