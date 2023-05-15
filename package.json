@@ -1,6 +1,6 @@
 {
     "name": "multer-cloudflare-storage",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Multer engine allowing users to upload to Cloudflare Images with ease 🚀",
     "author": "Zaid \"Nico\"",
     "license": "MIT",
@@ -16,7 +16,12 @@
     "files": [
         "dist/"
     ],
-    "tags": ["multer", "multer-engine", "multer-storage", "multer-cloudflare"],
+    "tags": [
+        "multer",
+        "multer-engine",
+        "multer-storage",
+        "multer-cloudflare"
+    ],
     "scripts": {
         "build": "npx tsc && npx gen-esm-wrapper . ./dist/index.mjs",
         "lint": "npx eslint src/ --ext .ts,.js",
