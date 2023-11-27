@@ -17,8 +17,11 @@ class CloudflareStorage implements StorageEngine {
     public _handleFile(_req: Request, file: Express.Multer.File, callback: CallbackFunction): void {
         const body = new FormData();
         body.append("file", file.stream, file.originalname);
+        void this._uploadFile(body, callback);
+    }
 
-        this._uploadFile(body, callback);
+    public _removeFile(_req: Request, file: Express.Multer.File, callback: (error: Error | null) => void): void {
+        void this._deleteFile(file.destination, callback);
     }
 
     private async _uploadFile(body: FormData, callback: CallbackFunction) {
@@ -41,10 +44,6 @@ class CloudflareStorage implements StorageEngine {
         }
 
         return callback(new Error("There was an error in uploading an asset to Cloudflare Images."));
-    }
-
-    public _removeFile(_req: Request, file: Express.Multer.File, callback: (error: Error | null) => void): void {
-        this._deleteFile(file.destination, callback);
     }
 
     private async _deleteFile(filedestination: string, callback: CallbackFunction) {
