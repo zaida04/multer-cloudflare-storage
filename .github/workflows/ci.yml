@@ -17,11 +17,11 @@ jobs:
             - name: Set up node
               uses: actions/setup-node@v1
               with:
-                  node-version: "14"
-                  cache: "yarn"
+                  node-version: "18"
+                  cache: "npm"
 
             - name: Install dependencies
-              run: yarn install
+              run: npm install
 
             - name: Run linter
-              run: yarn lint
+              run: npm run lint
